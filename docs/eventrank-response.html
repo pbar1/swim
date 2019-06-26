@@ -1,0 +1,496 @@
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="grid-icon">
+            <img id="UsasEventRankSearch_Grid-1_exportPDF" src="/ResourcePackages/Usas/assets/dist/images/Print.png" width="44" height="34"/>
+        </div>
+        <div class="grid-icon">
+            <img id="UsasEventRankSearch_Grid-1_exportExcel" src="/ResourcePackages/Usas/assets/dist/images/Excel-lb-icon.png"/>
+        </div>
+    </div>
+</div>
+
+<div class="usas usas-condensed-layout">
+    <div id="UsasEventRankSearch_Grid-1-Mobile" class="usas-kendo-grid usas-kendo-grid-hide-header hidden-lg hidden-md"></div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('#UsasEventRankSearch_Grid-1-Mobile').kendoGrid({
+            dataSource: {
+                data: [{"EventDesc":"100 BR LCM","EventSortOrder":690,"Rank":1,"SwimTime":"1:16.35","AltAdjSwimTime":"1:16.35","PowerPoints":494,"EventID":69,"FullName":"Toy, Alexander","PersonClusteredID":"2149925","Foreign":"","Age":18,"LSC":"PC","TeamName":"Quicksilver Swimming","Athletes":null,"AthletesPdf":null,"MeetID":165937,"MeetName":"2019 PC QSS v PEAK v TIDE","SwimDate":"\/Date(1560319200000)\/","StandardName":"\"BB\"","SponsorImage":"","SponsorWebsite":"","TimeId":142136869,"Distance":100}]
+            },
+            sortable: false,
+            reorderable: false,
+            groupable: false,
+            resizable: false,
+            filterable: false,
+            columnMenu: false,
+            pageable: false,
+            scrollable: true,
+            columns: [
+                {
+                    lockable: false,
+                    template: '',
+                    width: 0
+                }, {
+                    attributes: {
+                        style: 'padding: 0;'
+                    },
+                    lockable: false,
+                    template:
+                        '<div style="display: table; width: 100%;"> \
+                            <div style="display: table-row;"> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-right: 5px; padding-top: 2.5px; width: 50%;"> \
+                                    <b>#=Rank# - #=FullName#</b> #if (SponsorImage != "") {# <br/><img height="10px" alt="" src="/ResourcePackages/Usas/assets/dist/images/LeaderboardSponsorImages/#=SponsorImage#" /> #}# \
+                                </div> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-top: 2.5px; width: 50%;"> \
+                                    <b>#if (Distance != 50) {# <a class="pointer" title="Click to show splits" href="" onclick="Usas.assets.dist.js.showSplitsPopup(\'UsasEventRankSearch_Grid-1\', \'Times_EventRankSearch\', \'#=TimeId#\'); return false;">#=SwimTime#</a> #} else {# #=SwimTime# #}#</b> \
+                                </div> \
+                            </div> \
+                            <div style="display: table-row;"> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-right: 5px; padding-top: 2.5px; width: 50%;"> \
+                                    Age: #=Age# \
+                                </div> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-top: 2.5px; width: 50%;"> \
+                                    Alt Adj: #=AltAdjSwimTime#\
+                                </div> \
+                            </div> \
+                        </div> \
+                        <div style="display: table; width: 100%;"> \
+                            <div style="display: table-row;"> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-top: 2.5px; width: 100%;"> \
+                                    LSC: #=LSC#&nbsp;&nbsp;&nbsp;&nbsp;Team: #=TeamName# \
+                                </div> \
+                            </div> \
+                        </div> \
+                        <div style="display: table; width: 100%;"> \
+                            <div style="display: table-row;"> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-top: 2.5px; width: 100%;"> \
+                                    #=MeetName# \
+                                </div> \
+                            </div> \
+                        </div> \
+                        <div style="display: table; width: 100%;"> \
+                            <div style="display: table-row;"> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-top: 2.5px; width: 100%;"> \
+                                    Cut: #=StandardName# \
+                                </div> \
+                            </div> \
+                        </div> \
+                        <div style="display: table; width: 100%;"> \
+                            <div style="display: table-row;"> \
+                                <div style="display: table-cell; padding-bottom: 2.5px; padding-top: 2.5px; width: 100%;"> \
+                                    <a href="" onclick="Usas.Times_EventRankSearch.Index.GetProgression(\'Times_EventRankSearch_Index_Div_1\', #=EventID#, #=PersonClusteredID#, \'#:Usas.assets.dist.js.EscapeSingleQuotes(FullName)#\', \'100 BR LCM\'); return false;">PROG.</a> \
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<a href="" onclick="Usas.Times_EventRankSearch.Index.GetIndividualReport(\'MeetResults_Index_Div-1\', #=MeetID#, \'#:Usas.assets.dist.js.EscapeSingleQuotes(MeetName)#\', \'#=kendo.toString(kendo.parseDate(SwimDate, "yyyy-MM-dd\"), \"MM/dd/yyyy\")#\'); return false;">INDIV.</a> \
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<a href="" onclick="Usas.Times_EventRankSearch.Index.GetRelayReport(\'MeetResults_Index_Div-1\', #=MeetID#, \'#:Usas.assets.dist.js.EscapeSingleQuotes(MeetName)#\', \'#=kendo.toString(kendo.parseDate(SwimDate, "yyyy-MM-dd"), "MM/dd/yyyy")#\'); return false;">RELAY</a> \
+                                </div> \
+                            </div> \
+                        </div>',
+                    width: '100%'
+                }
+            ]
+        });
+    });
+</script>
+
+<div id="UsasEventRankSearch_Grid-1" class="usas-kendo-grid scrollable hidden-sm hidden-xs"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.0/jszip.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+        $("#UsasEventRankSearch_Grid-1").kendoGrid({
+            dataSource: {
+                data: [{"EventDesc":"100 BR LCM","EventSortOrder":690,"Rank":1,"SwimTime":"1:16.35","AltAdjSwimTime":"1:16.35","PowerPoints":494,"EventID":69,"FullName":"Toy, Alexander","PersonClusteredID":"2149925","Foreign":"","Age":18,"LSC":"PC","TeamName":"Quicksilver Swimming","Athletes":null,"AthletesPdf":null,"MeetID":165937,"MeetName":"2019 PC QSS v PEAK v TIDE","SwimDate":"\/Date(1560319200000)\/","StandardName":"\"BB\"","SponsorImage":"","SponsorWebsite":"","TimeId":142136869,"Distance":100}],
+                pageSize: 250
+            },
+            sortable: true,
+            reorderable: false,
+            groupable: false,
+            resizable: false,
+            filterable: false,
+            columnMenu: false,
+            pageable: true,
+            scrollable: true,
+            dataBound: Usas.Times_EventRankSearch.Index.FixGridHeight,
+            excel: {
+                fileName: 'Top Times Rankings 100 BR LCM',
+                filterable: true,
+                allPages: true
+            },
+            excelExport: function(e) {
+                var sheet = e.workbook.sheets[0];
+
+                for (var rowIndex = 1; rowIndex < sheet.rows.length; rowIndex++) {
+                    var row = sheet.rows[rowIndex];
+
+                    //format swim time
+                    if (!isNaN(row.cells[1].value)) {
+                        var seconds = row.cells[1].value.substring(0, 2);
+                        var milliseconds = row.cells[1].value.substring(3);
+                        milliseconds = milliseconds * 10;
+
+                        row.cells[1].value = new Date(1900, 1, 1, 12, 0, seconds, milliseconds);
+                        row.cells[1].format = "ss.00";
+                    } else {
+                        if (row.cells[1].value.includes(":") && !row.cells[1].value.includes("r")) {
+                            var minSeperator = row.cells[1].value.indexOf(":");
+                            var minutes = Number(row.cells[1].value.substring(0, minSeperator));
+                            var seconds = row.cells[1].value.substring(minSeperator + 1, minSeperator + 3);
+                            var milliseconds = row.cells[1].value.substring(minSeperator + 4);
+                            milliseconds = milliseconds * 10;
+                            row.cells[1].value = new Date(1900, 1, 1, 12, minutes, seconds, milliseconds);
+                            if (minutes < 10){
+                                row.cells[1].format = "m:ss.00";
+                            }
+                            else{
+                                row.cells[1].format = "mm:ss.00";
+                            }
+                        }
+                    }
+
+                    //format alt adj time
+                    if (!isNaN(row.cells[2].value)) {
+                        var seconds = row.cells[2].value.substring(0, 2);
+                        var milliseconds = row.cells[2].value.substring(3);
+                        milliseconds = milliseconds * 10;
+
+                        row.cells[2].value = new Date(2000, 1, 1, 12, 0, seconds, milliseconds);
+                        row.cells[2].format = "ss.00";
+                    } else {
+                        if (row.cells[2].value.includes(":") && !row.cells[2].value.includes("r")) {
+                            var minSeperator = row.cells[2].value.indexOf(":");
+                            var minutes = Number(row.cells[2].value.substring(0, minSeperator));
+                            var seconds = row.cells[2].value.substring(minSeperator + 1, minSeperator + 3);
+                            var milliseconds = row.cells[2].value.substring(minSeperator + 4);
+                            milliseconds = milliseconds * 10;
+                            row.cells[2].value = new Date(1900, 1, 1, 12, minutes, seconds, milliseconds);
+                            if (minutes < 10){
+                                row.cells[2].format = "m:ss.00";
+                            }
+                            else{
+                                row.cells[2].format = "mm:ss.00";
+                            }
+                        }
+                    }
+                }
+                grid.hideColumn(10);
+            },
+
+            columns: [
+                {
+                    field: "Rank",
+                    title: "Rank",
+                    locked: true,
+                    lockable: false,
+                    width: 70
+                }, {
+                    field: "SwimTime",
+                    title: "Time",
+                    template: "# if(Distance != 50) {# <a class='pointer' title='Click to show splits' href='' onclick='Usas.assets.dist.js.showSplitsPopup(\"UsasEventRankSearch_Grid-1\", \"Times_EventRankSearch\", \"#=TimeId#\");return false;'>#=SwimTime#</a>#}else{##=SwimTime##}#",
+                    locked: false,
+                    lockable: false,
+                    width: 95
+                }, {
+                    field: "AltAdjSwimTime",
+                    title: "Alt. Adj. Time",
+                    locked: false,
+                    lockable: false,
+                    width: 95
+                },  {
+                    field: "FullName",
+                    title: "Full Name",
+                    template: "#=FullName# #if(SponsorImage != '') {# <br/> <img height='20px' alt='' src='/ResourcePackages/Usas/assets/dist/images/LeaderboardSponsorImages/#=SponsorImage#' /> #}#",
+                    locked: false,
+                    lockable: false,
+                    width: 135
+                }, {
+                    field: "Foreign",
+                    title: "Foreign",
+                    locked: false,
+                    lockable: false,
+                    width: 100
+                }, {
+                    field: "Age",
+                    title: "Age",
+                    locked: false,
+                    lockable: false,
+                    width: 60
+                }, {
+                    field: "LSC",
+                    title: "LSC",
+                    lockable: false,
+                    width: 60
+                }, {
+                    field: "TeamName",
+                    title: "Team Name",
+                    lockable: false,
+                    width: 120
+                }, {
+                    field: "MeetName",
+                    title: "Meet Name",
+                    lockable: false,
+                    width: 180
+                }, {
+                    field: "StandardName",
+                    title: "Time Standard",
+                    lockable: false,
+                    width: 125
+                }, {
+                    field: "EventID",
+                    title: "Results",
+                    template: "<a href='' onclick='Usas.Times_EventRankSearch.Index.GetProgression(\"Times_EventRankSearch_Index_Div_1\", #=EventID#, #=PersonClusteredID#, \"#=FullName#\", \"100 BR LCM\");return false;'>PROG.</a><br />" +
+                        "<a href='' onclick='Usas.Times_EventRankSearch.Index.GetIndividualReport(\"MeetResults_Index_Div-1\", #=MeetID#, \"#:MeetName#\", \"#= kendo.toString(kendo.parseDate(SwimDate, 'yyyy-MM-dd'), 'MM/dd/yyyy') #\");return false;'>INDIV.</a><br />" +
+                        "<a href='' onclick='Usas.Times_EventRankSearch.Index.GetRelayReport(\"MeetResults_Index_Div-1\", #=MeetID#, \"#:MeetName#\", \"#= kendo.toString(kendo.parseDate(SwimDate, 'yyyy-MM-dd'), 'MM/dd/yyyy') #\");return false;'>RELAY</a>",
+                    lockable: false,
+                    width: 100
+                }
+            ]
+        });
+    });
+
+    var exportFlag = false;
+    $("#UsasEventRankSearch_Grid-1").data("kendoGrid").bind("excelExport", function (e) {
+        if (!exportFlag) {
+            e.sender.hideColumn(10);
+            e.preventDefault();
+            exportFlag = true;
+            setTimeout(function () {
+                e.sender.saveAsExcel();
+            });
+        } else {
+            e.sender.showColumn(10);
+            exportFlag = false;
+        }
+    });
+
+</script>
+
+<div class="hidden-sm hidden-xs">
+    <br />
+
+
+
+    <script>
+        //set up databound event for grid
+        var grid = $("#UsasEventRankSearch_Grid-1").data("kendoGrid");
+        if (typeof grid != "undefined") {
+            grid.bind("dataBound", function() {
+                InitializePager('UsasEventRankSearch_Grid-1-UsasGridPager', 'UsasEventRankSearch_Grid-1');
+            });
+        }
+
+        //initialize the pager
+        InitializePager('UsasEventRankSearch_Grid-1-UsasGridPager', 'UsasEventRankSearch_Grid-1');
+
+        function InitializePager(div, grid) {
+            if ($('#'+ grid).data() !== "undefined") {
+                $('#' + grid + ' .k-grid-pager').css('display', 'none'); //hide grid pager
+                $("[id='" + div + "-lblTotalPages" + "']").html($("#"+ grid).data().kendoGrid.dataSource.totalPages());
+                $("[id='" + div + "-txtCurrentPage" + "']").val($("#" + grid).data().kendoGrid.dataSource.page());
+                $(".k-grid-content").height("100%");
+            }
+        }
+
+
+        // ----------------- Custom pager - manage events --------------------
+        $("[id='UsasEventRankSearch_Grid-1-UsasGridPager-txtCurrentPage']").blur(function () {
+            var page = $("[id='UsasEventRankSearch_Grid-1-UsasGridPager-txtCurrentPage']").val();
+            $("#UsasEventRankSearch_Grid-1").data().kendoGrid.dataSource.page(page);
+        });
+        $("[id='UsasEventRankSearch_Grid-1-UsasGridPager-pgPrevious']").click(function () {
+            if (typeof onPaging !== 'undefined') {
+                onPaging();
+            }
+            var currentPage = parseInt($("[id='UsasEventRankSearch_Grid-1-UsasGridPager-txtCurrentPage']").val());
+            if (currentPage > 1) {
+                $("#UsasEventRankSearch_Grid-1").data().kendoGrid.dataSource.page(currentPage - 1);
+            }
+        });
+        $("[id='UsasEventRankSearch_Grid-1-UsasGridPager-pgNext']").click(function () {
+            if (typeof onPaging !== 'undefined') {
+                onPaging();
+            }
+            var totalPages = parseInt($("#UsasEventRankSearch_Grid-1").data().kendoGrid.dataSource.totalPages());
+            var currentPage = parseInt($("[id='UsasEventRankSearch_Grid-1-UsasGridPager-txtCurrentPage']").val());
+            if (currentPage < totalPages) {
+                $("#UsasEventRankSearch_Grid-1").data().kendoGrid.dataSource.page(currentPage + 1);
+            }
+        });
+
+    </script>
+
+    <style>
+        /* ----------------- Custom pager styles ---------------------------  */
+        .col-center-block {
+            float: none;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .custom-pager input {
+            width: 55px;
+            height: 30px;
+            padding-right: 3px;
+            padding-left: 3px;
+            text-align: center;
+            border: #bbb thin solid;
+        }
+
+        .prev-link {
+            float: left;
+            cursor: pointer;
+            width: 30px;
+        }
+
+        .next-link {
+            float: left;
+            cursor: pointer;
+            width: 30px;
+            text-align: right;
+        }
+
+    </style>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 ">
+            <div class="custom-pager col-center-block">
+                <div class="usas-light-blue bold prev-link" id="UsasEventRankSearch_Grid-1-UsasGridPager-pgPrevious"><</div>
+                <div style="float: left">
+                    <input id="UsasEventRankSearch_Grid-1-UsasGridPager-txtCurrentPage" class="usas-light-blue"/>
+                    of <span id="UsasEventRankSearch_Grid-1-UsasGridPager-lblTotalPages"></span> &nbsp;pages
+                </div>
+                <div class="usas-light-blue bold next-link" id="UsasEventRankSearch_Grid-1-UsasGridPager-pgNext">></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="UsasEventRankSearch_Grid-1-Printable" class="usas-kendo-grid usas-times-grid-printable"></div>
+
+<script src="//kendo.cdn.telerik.com/2016.2.714/js/pako_deflate.min.js"></script>
+<script type="x/kendo-template" id="UsasEventRankSearch_Grid-1-Pdf-Page-Template">
+    <div class="usas-times-pdf-page-template">
+        <div class="usas-times-pdf-page-template-header usas-times-pdf-page-template-timestamp">
+            6/22/2019 7:10:43 PM
+        </div>
+        <div class="usas-times-pdf-page-template-header">
+            Top Times Rankings: 100 BR LCM
+        </div>
+        <div class="usas-times-pdf-page-template-header usas-times-pdf-page-template-pages">
+            Page #:pageNum# of #:totalPages#
+        </div>
+    </div>
+</script>
+<script>
+    $(document).ready(function() {
+        $('#UsasEventRankSearch_Grid-1-Printable').kendoGrid({
+            pdf: {
+                allPages: true,
+                paperSize: ['8.5in', '11in'],
+                margin: { top: '.75in', right: '.25in', bottom: '.25in', left: '.25in' },
+                landscape: true,
+                repeatHeaders: true,
+                template: $('#UsasEventRankSearch_Grid-1-Pdf-Page-Template').html(),
+                scale: 0.5,
+                fileName: 'Top Times Rankings 100 BR LCM.pdf'
+            },
+            dataSource: {
+                data: [{"EventDesc":"100 BR LCM","EventSortOrder":690,"Rank":1,"SwimTime":"1:16.35","AltAdjSwimTime":"1:16.35","PowerPoints":494,"EventID":69,"FullName":"Toy, Alexander","PersonClusteredID":"2149925","Foreign":"","Age":18,"LSC":"PC","TeamName":"Quicksilver Swimming","Athletes":null,"AthletesPdf":null,"MeetID":165937,"MeetName":"2019 PC QSS v PEAK v TIDE","SwimDate":"\/Date(1560319200000)\/","StandardName":"\"BB\"","SponsorImage":"","SponsorWebsite":"","TimeId":142136869,"Distance":100}],
+                schema: {
+                    model: {
+                        fields: {
+                            Rank: { type: "number" },
+                            SwimTime: { type: "string" },
+                            AltAdjTime: { type: "string" },
+                            FullName: { type: "string" },
+                            Foriegn: { type: "string" },
+                            Age: { type: "number" },
+                            LSC: { type: "string" },
+                            TeamName: { type: "string" },
+                            MeetName: { type: "string" },
+                            StandardName: { type: "string" }
+                        }
+                    }
+                },
+                pageSize: 8
+            },
+            pageable: false,
+            columns: [
+                {
+                    field: "Rank",
+                    title: "Rank",
+                    width: 65
+                }, {
+                    field: "SwimTime",
+                    title: "Time",
+                    width: 90
+                }, {
+                    field: "AltAdjSwimTime",
+                    title: "Alt. Adj. Time",
+                    width: 90
+                },  {
+                    field: "FullName",
+                    title: "Full Name",
+                    width: 150
+                }, {
+                    field: "Foreign",
+                    title: "Foreign",
+                    width: 100
+                }, {
+                    field: "Age",
+                    title: "Age",
+                    width: 50
+                }, {
+                    field: "LSC",
+                    title: "LSC",
+                    width: 50
+                }, {
+                    field: "TeamName",
+                    title: "Team Name",
+                    width: 120
+                }, {
+                    field: "MeetName",
+                    title: "Meet Name",
+                    width: 200
+                }, {
+                    field: "StandardName",
+                    title: "Time Standard",
+                    width: 150
+                }
+            ]
+        });
+    });
+    function destroyWindow(e) {
+        this.content("");
+    }
+</script>
+
+<div id="UsasEventRankSearch_Grid-1-SplitsWindow" style="display:none"></div><script>
+    jQuery(function(){jQuery("#UsasEventRankSearch_Grid-1-SplitsWindow").kendoWindow({"deactivate":destroyWindow,"modal":true,"iframe":false,"draggable":true,"scrollable":true,"pinned":false,"title":"Splits","resizable":false,"actions":["Close"]});});
+</script>
+
+
+<div id="MeetResults_Index_Div-1">
+
+
+    <div id="MeetResults_Index_Div-1-ReportWindow" style="display:none"></div><script>
+    jQuery(function(){jQuery("#MeetResults_Index_Div-1-ReportWindow").kendoWindow({"modal":true,"iframe":true,"draggable":true,"scrollable":true,"pinned":false,"title":"Meet Results","resizable":false,"width":800,"height":600,"actions":["Close"]});});
+</script>
+
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        Usas.Times_EventRankSearch.Index.WireUpButton('MeetResults_Index_Div-1');
+        Usas.Times_EventRankSearch.ExportTimes.WireUpButtons('UsasEventRankSearch_Grid-1');
+    });
+</script>
