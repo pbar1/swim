@@ -58,10 +58,7 @@ func EventRank(in *EventRankInput) error {
 	}
 	defer reader.Close()
 
-	// tok := html.NewTokenizer(reader)
-	// for {
-	// 	tt := tok.Next()
-	// }
+	// TODO
 
 	return nil
 }
