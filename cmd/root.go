@@ -2,9 +2,11 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/pbar1/swim/pkg/usas"
 	"log"
 	"os"
+	"time"
+
+	"github.com/pbar1/swim/pkg/usas"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -16,9 +18,19 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "swim",
 	Short: "Swimming times utility",
-	Long: `Swimming times utility`,
+	Long:  `Swimming times utility`,
 	Run: func(cmd *cobra.Command, args []string) {
-		err := usas.EventRank()
+		err := usas.EventRank(&usas.EventRankInput{
+			StartDate: time.Now(),
+			EndDate:   time.Now(),
+			Gender:    usas.GenderMale,
+			Distance:  usas.Distance100,
+			Stroke:    usas.StrokeFree,
+			Course:    usas.CourseSCY,
+			Zone:      usas.ZoneAll,
+			StartAge:  18,
+			EndAge:    18,
+		})
 		if err != nil {
 			log.Fatal(err)
 		}
