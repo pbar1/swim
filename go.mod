@@ -1,4 +1,4 @@
-module github.com/pbar1/swim
+module gitlab.com/pbar/swim
 
 require (
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
