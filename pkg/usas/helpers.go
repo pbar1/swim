@@ -9,14 +9,16 @@ import (
 
 // TODO: set `Referer` at request site
 var headers = map[string]string{
-	"RequestVerificationToken": "2YQ5Gs9TY6WCD7LrWF6IqjE5DidlcPMS5R5lO5sKW2aD6nG-oHVJLawtGjNkR7UWuFcNQUSvp-Q0D7KzjBPFiLzsbfQ1:I4ZUkMDpZxelWutmPFyKmcpFJv5GIX38MPFOvJllshQBuNwRgwt-ew86qJr9mKnoBPijxw06DmyB3PBvG8oq7fjtZf81",
-	"Origin":                   "https://www.usaswimming.org",
-	"User-Agent":               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
-	"Content-Type":             "application/x-www-form-urlencoded",
 	"Accept":                   "*/*",
-	"X-Requested-With":         "XMLHttpRequest",
 	"Accept-Encoding":          "gzip, deflate, br",
-	"Accept-Language":          "en-US,en;q=0.9",
+	"Accept-Language":          "en-US,en;q=0.5",
+	"Connection":               "keep-alive",
+	"Content-Type":             "application/x-www-form-urlencoded; charset=UTF-8",
+	"Host":                     "www.usaswimming.org",
+	"Referer":                  "https://www.usaswimming.org/times/event-rank-search",
+	"RequestVerificationToken": "OXJ0vlRBcNyzj7NmZamU9_oQX7cd4il5MEnM5--k59vf4hkIIe-YChdRy7nD4ZkbUiNlxiZIbVJplYIU1jthpkdmSMM1:ceLtdeq6KVGe55VmTqRbttJR8mxfTaCO6_ynPipXtARf1uhapildOZnsFMW2gErLJwfTu_PZiCQDxMLFnC_zrgaP6VE1",
+	"User-Agent":               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+	"X-Requested-With":         "XMLHttpRequest",
 }
 
 type ErrReqVerTokenNotFound struct {

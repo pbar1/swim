@@ -2,9 +2,8 @@ package usas
 
 import (
 	"compress/gzip"
-	"io"
+	"fmt"
 	"net/url"
-	"os"
 	"time"
 )
 
@@ -31,17 +30,17 @@ func EventRank(in *EventRankInput) error {
 		"EndDate":                  {in.EndDate.Format("1/2/2006")},
 		"DateRangeID":              {"0"},
 		"SelectedGender":           {string(in.Gender)},
-		"DSC[DistanceID]":          {string(in.Distance)},
+		"DSC[DistanceID]":          {in.Distance.String()},
 		"DSC[StrokeID]":            {in.Stroke.ID()},
 		"DSC[CourseID]":            {in.Course.ID()},
 		"StandardID":               {"12"}, // Slower than B
 		"LSCs":                     {"'All'"},
 		"ZoneID":                   {in.Zone.ID()}, // All
-		"AgeRangeStart":            {string(in.StartAge)},
-		"AgeRangeEnd":              {string(in.EndAge)},
-		"SelectedTimesToInclude":   {"All"}, // Other option is "Best"
-		"SelectedMembersToInclude": {"No"},  // Include non USA Swimming members
-		"MaxResults":               {"5000"},
+		"AgeRangeStart":            {fmt.Sprintf("%d", in.StartAge)},
+		"AgeRangeEnd":              {fmt.Sprintf("%d", in.EndAge)},
+		"SelectedTimesToInclude":   {"Best"}, // Other option is "Best"
+		"SelectedMembersToInclude": {"Yes"},  // Include non USA Swimming members
+		"MaxResults":               {"250"},
 		"OrderBy":                  {"Rank"},
 		"clubId":                   {""},
 		"TimeType":                 {"Individual"},
@@ -53,8 +52,6 @@ func EventRank(in *EventRankInput) error {
 	}
 	defer resp.Body.Close()
 
-	io.Copy(os.Stdout, resp.Body)
-
 	reader, err := gzip.NewReader(resp.Body)
 	if err != nil {
 		return err
@@ -65,8 +62,6 @@ func EventRank(in *EventRankInput) error {
 	// for {
 	// 	tt := tok.Next()
 	// }
-
-	io.Copy(os.Stdout, reader)
 
 	return nil
 }

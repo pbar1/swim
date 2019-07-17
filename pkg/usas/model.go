@@ -1,5 +1,7 @@
 package usas
 
+import "fmt"
+
 type (
 	// Gender is the gender of the swimmer
 	Gender string
@@ -63,7 +65,7 @@ func (g Gender) String() string {
 }
 
 func (d Distance) String() string {
-	return string(d)
+	return fmt.Sprintf("%d", d)
 }
 
 func (s Stroke) String() string {
@@ -80,15 +82,15 @@ func (z Zone) String() string {
 
 // ID returns the stroke ID
 func (s Stroke) ID() string {
-	return string(s)
+	return fmt.Sprintf("%d", s)
 }
 
 // ID returns the course ID
 func (c Course) ID() string {
-	return string(c)
+	return fmt.Sprintf("%d", c)
 }
 
 // ID returns the zone ID
 func (z Zone) ID() string {
-	return string(z)
+	return fmt.Sprintf("%d", z)
 }
