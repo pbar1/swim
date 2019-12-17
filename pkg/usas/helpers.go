@@ -2,12 +2,9 @@ package usas
 
 import (
 	"fmt"
-	"io"
 	"net/http"
 	"net/url"
 	"strings"
-
-	"golang.org/x/net/html"
 )
 
 // TODO: set `Referer` at request site
@@ -67,9 +64,9 @@ func makePost(reqURL string, formData url.Values) (*http.Response, error) {
 	return resp, nil
 }
 
-func extractJS(htmlReader io.Reader) {
-	tok := html.NewTokenizer(htmlReader)
-	for {
-		tt := tok.Next()
-	}
-}
+//func extractJS(htmlReader io.Reader) {
+//	tok := html.NewTokenizer(htmlReader)
+//	for {
+//		tt := tok.Next()
+//	}
+//}

@@ -18,7 +18,7 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "swim",
 	Short: "Swimming times utility",
-	Long:  `Swimming times utility`,
+	Long:  `Swimming times utilitsy`,
 	Run: func(cmd *cobra.Command, args []string) {
 		err := usas.EventRank(&usas.EventRankInput{
 			StartDate: time.Now(),
