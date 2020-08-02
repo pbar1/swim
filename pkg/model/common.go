@@ -12,7 +12,7 @@ type (
 	Organization string
 
 	SwimDate struct {
-		T time.Time
+		T time.Time `csv:"-"`
 	}
 )
 

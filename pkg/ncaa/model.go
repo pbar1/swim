@@ -3,21 +3,6 @@ package ncaa
 import "github.com/pbar1/swim/pkg/model"
 
 type (
-	NamedDateRange string
-
-	SwimResult struct {
-		AltAdjSwimTime string // pos 2
-		ConvFrom       string // pos 3
-		Name           string // pos 4
-		Age            int    // pos 5, make sure to correct returned age
-		School         string // pos 6
-		Year           string // pos 7
-		MeetName       string // pos 8
-		SwimDate       string // pos 9
-		Standard       string // pos 10
-		Gender         string
-	}
-
 	EventRankSearchParameters struct {
 		Conference     string
 		NamedDateRange string
@@ -64,6 +49,35 @@ const (
 )
 
 var (
+	NamedDateRangesD1 = []string{
+		"(1) 2019-20 NCAA Div I",
+		"(2) 2018-19 NCAA Div I",
+		"(3) 2017-18 NCAA Div I",
+		"(4) 2016-17 NCAA Div I",
+		"(5) 2015-16 NCAA Div I",
+		"(6) 2014-15 NCAA Div I",
+		"(7) 2013-14 NCAA Div I",
+		"(8) 2012-13 NCAA Div I",
+		"(9) 2011-12 NCAA Div I",
+		"(10) 2010-11 NCAA Div I",
+		"(11) 2009-10 NCAA Div I",
+		"(12) 2008-09 NCAA Div I",
+		"(13) 2007-08 NCAA Div I",
+	}
+
+	NamedDateRangesD2 = []string{
+		"(1) 2019-20 NCAA Div II",
+		"(2) 2018-19 NCAA Div II",
+		"(3) 2017-18 NCAA Div II",
+		"(4) 2016-17 NCAA Div II",
+		"(5) 2015-16 NCAA Div II",
+		"(6) 2014-15 NCAA Div II",
+		"(7) 2013-14 NCAA Div II",
+		"(8) 2012-13 NCAA Div II",
+		"(9) 2011-12 NCAA Div II",
+		"(10) 2010-11 NCAA Div II",
+	}
+
 	NamedDateRangesD3 = []string{
 		"(1) 2019-20 NCAA Div III",
 		"(2) 2018-19 NCAA Div III",
@@ -75,6 +89,61 @@ var (
 		"(8) 2012-13 NCAA Div III",
 		"(9) 2011-12 NCAA Div III",
 		"(10) 2010-11 NCAA Div III",
+	}
+
+	ConferencesD1 = []string{
+		// "-- All --",
+		"ACC (Atlantic Coast)",
+		"America East",
+		"American Athletic Conf",
+		"Atlantic 10",
+		"Big 12",
+		"Big East",
+		"Big Ten",
+		"Coastal College (CCSA)",
+		"Colonial Athletic Assoc",
+		"Conference USA",
+		"Horizon League",
+		"Independent",
+		"Ivy League",
+		"Metro Atlantic Athl. Conf",
+		"Metropolitan Swimming Con",
+		"Mid-American Conf",
+		"Missouri Valley",
+		"Mountain Pacific Sports",
+		"Mountain West",
+		"Northeast Conf",
+		"Pacific 12",
+		"Pacific Collegiate",
+		"SEC (Southeastern)",
+		"Sun Belt",
+		"The Patriot League",
+		"The Summit League",
+		"Western Athletic Conf",
+	}
+
+	ConferencesD2 = []string{
+		// "-- All --",
+		"Appalachian (ASC)",
+		"Bluegrass Mountain",
+		"California Collegiate",
+		"Central Atlantic",
+		"Conference Carolinas",
+		"East Coast",
+		"GMAC/MEC",
+		"Great Lakes Intercoll",
+		"Great Lakes Valley",
+		"Independent",
+		"Metropolitan Swimming",
+		"Mid-America Intercoll",
+		"Mountain Pacific Sports",
+		"New South Intercollegiate",
+		"Northeast Ten",
+		"Northern Sun Intercoll",
+		"Pacific Collegiate",
+		"Pennsylvania State (PSAC)",
+		"Rocky Mountain Athletic",
+		"Sunshine State",
 	}
 
 	ConferencesD3 = []string{

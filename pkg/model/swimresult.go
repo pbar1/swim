@@ -2,7 +2,7 @@ package model
 
 type SwimResult struct {
 	// Competition event, ex. "LCM IM 400"
-	SwimEvent *SwimEvent `csv:"SwimEvent"`
+	SwimEvent *SwimEvent `csv:"-"`
 
 	// (Optional) Unique result ID
 	SwimID int `csv:"SwimID"`
