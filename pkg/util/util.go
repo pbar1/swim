@@ -23,17 +23,17 @@ func ParseSeconds(t string) (float64, error) {
 	if len(spl) == 1 {
 		sec, err := strconv.ParseFloat(spl[0], 64)
 		if err != nil {
-			return 0, err
+			return 0, fmt.Errorf(`parsing time string "%s": %v`, t, err)
 		}
 		return sec, nil
 	} else if len(spl) == 2 {
 		sec, err := strconv.ParseFloat(spl[1], 64)
 		if err != nil {
-			return 0, err
+			return 0, fmt.Errorf(`parsing time string "%s": %v`, t, err)
 		}
 		min, err := strconv.Atoi(spl[0])
 		if err != nil {
-			return 0, err
+			return 0, fmt.Errorf(`parsing time string "%s": %v`, t, err)
 		}
 		return float64(min)*60.0 + sec, nil
 	}

@@ -1,6 +1,8 @@
 package cli
 
 import (
+	"log"
+	"strings"
 	"time"
 
 	"github.com/spf13/cobra"
@@ -10,7 +12,7 @@ import (
 
 const (
 	pool    = 10
-	timeout = 5 * time.Second
+	timeout = 6 * time.Second
 )
 
 // getCmd represents the create command
@@ -19,8 +21,18 @@ var mirrorCmd = &cobra.Command{
 	Short: "Download all times available for a given parameter space",
 	Long:  `Download all times available for a given parameter space`,
 	Run: func(cmd *cobra.Command, args []string) {
-		if args[0] == "d3" || args[0] == "D3" {
+		if len(args) == 0 {
+			log.Fatalln("must give argument: d1|d2|d3")
+		}
+		switch strings.ToLower(args[0]) {
+		case "d1":
+			mirror.MirrorNCAAD1(pool, timeout)
+		case "d2":
+			mirror.MirrorNCAAD2(pool, timeout)
+		case "d3":
 			mirror.MirrorNCAAD3(pool, timeout)
+		default:
+			log.Fatalf("unrecognized argument: %s\n", args[0])
 		}
 	},
 }

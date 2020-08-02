@@ -2,7 +2,7 @@ package model
 
 type SwimResult struct {
 	// Competition event, ex. "LCM IM 400"
-	SwimEvent *SwimEvent `csv:"-"`
+	SwimEvent SwimEvent `csv:"-"`
 
 	// (Optional) Unique result ID
 	SwimID int `csv:"SwimID"`
@@ -54,7 +54,7 @@ type SwimResult struct {
 	MeetID int `csv:"MeetID"`
 
 	// Swim date, ex. "2008-08-09"
-	SwimDate *SwimDate `csv:"SwimDate"`
+	SwimDate SwimDate `csv:"SwimDate"`
 
 	// (Optional) Org-specific time standard/cut achieved, ex. "Summer Nationals (LCM)"
 	TimeStandard string `csv:"TimeStandard"`
@@ -73,4 +73,7 @@ type SwimResult struct {
 
 	// (NCAA) Whether the swim is ineligible for NCAA Championships
 	NCAAIneligible bool `csv:"NCAAIneligible"`
+
+	// (NCAA) Course the time was converted from, ex. "SCM"
+	NCAAConvFrom string `csv:"NCAAConvFrom"`
 }

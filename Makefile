@@ -1,7 +1,7 @@
 export CGO_ENABLED     := 0
 export DOCKER_BUILDKIT := 1
 
-BIN     := hcl2json
+BIN     := swim
 VERSION := $(shell git describe --tags --always --dirty)
 #LDFLAGS := -ldflags="-s -w -X main.version=$(VERSION)"
 LDFLAGS := -ldflags="-s -w"

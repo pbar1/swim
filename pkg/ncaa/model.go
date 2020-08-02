@@ -43,8 +43,8 @@ const (
 	XPathMaxResults         = `//*[@id="ctl02_txtMaxResults"]`
 	XPathSearchButton       = `//*[@id="ctl02_btnSearch"]`
 	XPathSearchResultsTitle = `//*[@id="ctl02_trSearchResultsTitle"]`
-	XPathNoTimesFound       = `//*[@id="ctl02_lblNoSearchResults"]`
 
+	TextNoTimesFound      = "No times were found matching your search parameters."
 	SelectorSearchResults = `#ctl02_dgSearchResults`
 )
 

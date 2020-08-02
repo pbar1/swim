@@ -26,7 +26,7 @@ func (e SwimEvent) IsValid() bool {
 }
 
 var (
-	AllSwimEvents = []*SwimEvent{
+	AllSwimEvents = []SwimEvent{
 		// valid SCY events
 		{50, StrokeFree, CourseSCY},
 		{100, StrokeFree, CourseSCY},
