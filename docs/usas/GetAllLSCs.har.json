@@ -1,0 +1,365 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Firefox",
+      "version": "74.0"
+    },
+    "browser": {
+      "name": "Firefox",
+      "version": "74.0"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2020-03-25T22:11:16.277-07:00",
+        "id": "page_3",
+        "pageTimings": {
+          "onContentLoad": -1,
+          "onLoad": -1
+        }
+      }
+    ],
+    "entries": [
+      {
+        "pageref": "page_3",
+        "startedDateTime": "2020-03-25T22:11:16.277-07:00",
+        "request": {
+          "bodySize": 39,
+          "method": "POST",
+          "url": "https://www.usaswimming.org/api/Reports_PowerPointClubChamp/GetClubSearch",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Host",
+              "value": "www.usaswimming.org"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:74.0) Gecko/20100101 Firefox/74.0"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.5"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/x-www-form-urlencoded; charset=UTF-8"
+            },
+            {
+              "name": "RequestVerificationToken",
+              "value": "-Oz872e4rhwLpYn0n8cC8H8PJpQIR8wP3rONDRqRdD92GRXDEMSNaB0YtJ5XiMXrCjiRJecADw8OamSyyUpK0Z3EFNA1:tdYm49TFfwjONM_pIJ9SVfbqBAekG-YyODGKRn3kC8mkndxbJsSIwM822HrZIMDjUI1xL143FLOLVCUOtVZKnKdd4Ms1"
+            },
+            {
+              "name": "X-Requested-With",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "Content-Length",
+              "value": "39"
+            },
+            {
+              "name": "Origin",
+              "value": "https://www.usaswimming.org"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Referer",
+              "value": "https://www.usaswimming.org/times/event-rank-search"
+            },
+            {
+              "name": "Cookie",
+              "value": "ASP.NET_SessionId=n43e3vpyzw1vt2tiomswoozi; __RequestVerificationToken=P1aoiOsM6LGWbof-yhUAnx9K89xw3tX9jsfegBBYSkYZ3J3X8O0FeSD0-c2Ppn92YI6bn0eYHCDcQgOV0UNSb-C0uRw1; loadedFromServer=true; BIGipServerPRODSFWEB_8085=!f3SFr6m9NYfKWjyOkTPQMZoCe0Bx6+HegbwC3W0dqxN1BThRdz5NtWTJG+5hxb9ebWLinwTucpu8zHE=; sf-trckngckie=5f11a329-bf02-4003-bcf1-4e659e9a9988"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "ASP.NET_SessionId",
+              "value": "n43e3vpyzw1vt2tiomswoozi"
+            },
+            {
+              "name": "__RequestVerificationToken",
+              "value": "P1aoiOsM6LGWbof-yhUAnx9K89xw3tX9jsfegBBYSkYZ3J3X8O0FeSD0-c2Ppn92YI6bn0eYHCDcQgOV0UNSb-C0uRw1"
+            },
+            {
+              "name": "loadedFromServer",
+              "value": "true"
+            },
+            {
+              "name": "BIGipServerPRODSFWEB_8085",
+              "value": "!f3SFr6m9NYfKWjyOkTPQMZoCe0Bx6+HegbwC3W0dqxN1BThRdz5NtWTJG+5hxb9ebWLinwTucpu8zHE="
+            },
+            {
+              "name": "sf-trckngckie",
+              "value": "5f11a329-bf02-4003-bcf1-4e659e9a9988"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 1088,
+          "postData": {
+            "mimeType": "application/x-www-form-urlencoded",
+            "params": [
+              {
+                "name": "divId",
+                "value": "Times_EventRankSearch_Index_Div_1"
+              }
+            ],
+            "text": "divId=Times_EventRankSearch_Index_Div_1"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "name": "Server",
+              "value": "Microsoft-IIS/8.5"
+            },
+            {
+              "name": "X-Aspnet-Version",
+              "value": "4.0.30319"
+            },
+            {
+              "name": "X-Aspnetmvc-Version",
+              "value": "5.2"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "X-Powered-By",
+              "value": "ASP.NET"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 26 Mar 2020 05:11:16 GMT"
+            },
+            {
+              "name": "Content-Length",
+              "value": "824"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "BIGipServerPRODSFWEB_8085=!TzFz4UFcY3mBVneOkTPQMZoCe0Bx6zaX6gTYEocZXWvy5MWVdKtqMZLhnpcfHRkfvekm2ajW6RM8AGE=; path=/; Httponly; Secure"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "BIGipServerPRODSFWEB_8085",
+              "value": "!TzFz4UFcY3mBVneOkTPQMZoCe0Bx6zaX6gTYEocZXWvy5MWVdKtqMZLhnpcfHRkfvekm2ajW6RM8AGE="
+            }
+          ],
+          "content": {
+            "mimeType": "text/html; charset=utf-8",
+            "size": 3096,
+            "text": "\r\n\r\n\r\n\r\n\r\n\r\n<style>\r\n    .Club_ClubSearch .col-md-6 {\r\n        padding-left: 0;\r\n        padding-right: 0;\r\n    }\r\n    .Club_ClubSearch .col-2m-12 {\r\n        padding-left: 8;\r\n        padding-right: 0;\r\n    }\r\n    .usas-full-width >.k-dropdown {  \r\n        width: 100%;\r\n        max-width: 275px;\r\n    }\r\n}\r\n</style>\r\n\r\n<div id=\"Club_ClubSearch_Index_Div-1\" class=\"usas usas-widget Club_ClubSearch\">\r\n    <div class=\"innerForm\">\r\n<form action=\"/api/Reports_PowerPointClubChamp/GetClubSearch\" method=\"post\">            <div class=\"container\" >\r\n\r\n                <div class=\"row  \">\r\n                    <div class=\"col-md-6 col-sm-12\">\r\n                        <label>Club Name</label>\r\n                        <br />\r\n                        <input id=\"txtClubName\" name=\"ClubName\" type=\"text\" value=\"\" />\r\n                    </div>\r\n                    <div class=\"col-md-6 col-sm-12\">\r\n                        <label>Club Code</label>\r\n                        <br />\r\n                        <input id=\"txtClubCode\" name=\"ClubCode\" type=\"text\" value=\"\" />\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-6 col-sm-12\">\r\n                        <label>City</label>\r\n                        <br />\r\n                        <input id=\"txtCityName\" name=\"CityName\" type=\"text\" value=\"\" />\r\n                    </div>\r\n                    <div class=\"col-md-6 col-sm-12 usas-full-width\"> \r\n                        <label>LSC</label>\r\n                        <br />\r\n                        <input id=\"ddlLSCs2\" name=\"ddlLSCs2\" type=\"text\" /><script>\r\n\tjQuery(function(){jQuery(\"#ddlLSCs2\").kendoDropDownList({\"dataSource\":{\"transport\":{\"read\":{\"url\":\"/api/Club_ClubSearch/GetAllLSCs\"}},\"schema\":{\"data\":\"Data\",\"total\":\"Total\",\"errors\":\"errors\"}},\"dataTextField\":\"LscName\",\"dataValueField\":\"LscID\"});});\r\n</script>\r\n                        <br />\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-12 col-sm-12\">\r\n                        <br />\r\n                        <div class=\"usas-slash-button-container\">\r\n                            <button id=\"clubSearchButton\" class=\"usas-slash-button\">Search</button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row \">\r\n                    <div class=\"col-sm-12\">\r\n                        <br/>\r\n                        <div id=\"Club_ClubSearch_Index_Div-1-loading\" class=\"resultContainer\">\r\n                            <i class=\"fa fa-spinner fa-pulse fa-3x wraptocenter\"></i>\r\n                        </div>\r\n\r\n                        <div id=\"Club_ClubSearch_Index_Div-1-ClubSearchPopupResults\"></div>\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n</form>\r\n\r\n\r\n        \r\n    </div>\r\n    <script>\r\n        $(document).ready(function () {\r\n            Usas.assets.dist.js.WireupClubSearchButton('Club_ClubSearch_Index_Div-1', 'Times_EventRankSearch_Index_Div_1');\r\n        })\r\n    </script>\r\n</div>\r\n"
+          },
+          "redirectURL": "",
+          "headersSize": 493,
+          "bodySize": 1317
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0,
+          "dns": 84,
+          "connect": 16,
+          "ssl": 40,
+          "send": 0,
+          "wait": 124,
+          "receive": 0
+        },
+        "time": 264,
+        "_securityState": "secure",
+        "serverIPAddress": "184.31.166.100",
+        "connection": "443"
+      },
+      {
+        "pageref": "page_3",
+        "startedDateTime": "2020-03-25T22:11:16.570-07:00",
+        "request": {
+          "bodySize": 0,
+          "method": "GET",
+          "url": "https://www.usaswimming.org/api/Club_ClubSearch/GetAllLSCs",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Host",
+              "value": "www.usaswimming.org"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:74.0) Gecko/20100101 Firefox/74.0"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.5"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "X-Requested-With",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Referer",
+              "value": "https://www.usaswimming.org/times/event-rank-search"
+            },
+            {
+              "name": "Cookie",
+              "value": "ASP.NET_SessionId=n43e3vpyzw1vt2tiomswoozi; __RequestVerificationToken=P1aoiOsM6LGWbof-yhUAnx9K89xw3tX9jsfegBBYSkYZ3J3X8O0FeSD0-c2Ppn92YI6bn0eYHCDcQgOV0UNSb-C0uRw1; loadedFromServer=true; BIGipServerPRODSFWEB_8085=!TzFz4UFcY3mBVneOkTPQMZoCe0Bx6zaX6gTYEocZXWvy5MWVdKtqMZLhnpcfHRkfvekm2ajW6RM8AGE=; sf-trckngckie=5f11a329-bf02-4003-bcf1-4e659e9a9988"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "ASP.NET_SessionId",
+              "value": "n43e3vpyzw1vt2tiomswoozi"
+            },
+            {
+              "name": "__RequestVerificationToken",
+              "value": "P1aoiOsM6LGWbof-yhUAnx9K89xw3tX9jsfegBBYSkYZ3J3X8O0FeSD0-c2Ppn92YI6bn0eYHCDcQgOV0UNSb-C0uRw1"
+            },
+            {
+              "name": "loadedFromServer",
+              "value": "true"
+            },
+            {
+              "name": "BIGipServerPRODSFWEB_8085",
+              "value": "!TzFz4UFcY3mBVneOkTPQMZoCe0Bx6zaX6gTYEocZXWvy5MWVdKtqMZLhnpcfHRkfvekm2ajW6RM8AGE="
+            },
+            {
+              "name": "sf-trckngckie",
+              "value": "5f11a329-bf02-4003-bcf1-4e659e9a9988"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 738
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "name": "Content-Length",
+              "value": "2851"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Server",
+              "value": "Microsoft-IIS/8.5"
+            },
+            {
+              "name": "X-Aspnet-Version",
+              "value": "4.0.30319"
+            },
+            {
+              "name": "X-Aspnetmvc-Version",
+              "value": "5.2"
+            },
+            {
+              "name": "X-Powered-By",
+              "value": "ASP.NET"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 26 Mar 2020 05:11:16 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "BIGipServerPRODSFWEB_8085=!otkJtGlBtIK1gbmOkTPQMZoCe0Bx61M1qOvrUUahPJRykMsyhNC0yCShphiIucqC47/mIYfLimsg7oA=; path=/; Httponly; Secure"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "BIGipServerPRODSFWEB_8085",
+              "value": "!otkJtGlBtIK1gbmOkTPQMZoCe0Bx61M1qOvrUUahPJRykMsyhNC0yCShphiIucqC47/mIYfLimsg7oA="
+            }
+          ],
+          "content": {
+            "mimeType": "application/json; charset=utf-8",
+            "size": 2851,
+            "text": "{\"Data\":[{\"LscID\":\"All\",\"LscName\":\"All\"},{\"LscID\":\"AD\",\"LscName\":\"ADIRONDACK SWIMMING\"},{\"LscID\":\"AK\",\"LscName\":\"ALASKA SWIMMING\"},{\"LscID\":\"AM\",\"LscName\":\"ALLEGHENY MOUNTAIN\"},{\"LscID\":\"AZ\",\"LscName\":\"ARIZONA SWIMMING\"},{\"LscID\":\"AR\",\"LscName\":\"ARKANSAS SWIMMING\"},{\"LscID\":\"BD\",\"LscName\":\"BORDER SWIMMING\"},{\"LscID\":\"CC\",\"LscName\":\"CENTRAL CALIFORNIA\"},{\"LscID\":\"CO\",\"LscName\":\"COLORADO SWIMMING\"},{\"LscID\":\"CT\",\"LscName\":\"CONNECTICUT SWIMMING\"},{\"LscID\":\"FG\",\"LscName\":\"FLORIDA GOLD COAST\"},{\"LscID\":\"FL\",\"LscName\":\"FLORIDA SWIMMING\"},{\"LscID\":\"GA\",\"LscName\":\"GEORGIA SWIMMING\"},{\"LscID\":\"GU\",\"LscName\":\"GULF SWIMMING\"},{\"LscID\":\"HI\",\"LscName\":\"HAWAIIAN SWIMMING\"},{\"LscID\":\"IL\",\"LscName\":\"ILLINOIS SWIMMING\"},{\"LscID\":\"IN\",\"LscName\":\"INDIANA SWIMMING\"},{\"LscID\":\"IE\",\"LscName\":\"INLAND EMPIRE SWIMMING\"},{\"LscID\":\"IA\",\"LscName\":\"IOWA SWIMMING\"},{\"LscID\":\"KY\",\"LscName\":\"KENTUCKY SWIMMING\"},{\"LscID\":\"LE\",\"LscName\":\"LAKE ERIE SWIMMING\"},{\"LscID\":\"LA\",\"LscName\":\"LOUISIANA SWIMMING\"},{\"LscID\":\"ME\",\"LscName\":\"MAINE SWIMMING\"},{\"LscID\":\"MD\",\"LscName\":\"MARYLAND SWIMMING\"},{\"LscID\":\"MR\",\"LscName\":\"METROPOLITAN SWIMMING\"},{\"LscID\":\"MI\",\"LscName\":\"MICHIGAN SWIMMING\"},{\"LscID\":\"MA\",\"LscName\":\"MIDDLE ATLANTIC SWIMMING\"},{\"LscID\":\"MW\",\"LscName\":\"MIDWESTERN SWIMMING\"},{\"LscID\":\"MN\",\"LscName\":\"MINNESOTA SWIMMING\"},{\"LscID\":\"MS\",\"LscName\":\"MISSISSIPPI SWIMMING\"},{\"LscID\":\"MV\",\"LscName\":\"MISSOURI VALLEY SWIMMING\"},{\"LscID\":\"MT\",\"LscName\":\"MONTANA SWIMMING\"},{\"LscID\":\"NE\",\"LscName\":\"NEW ENGLAND SWIMMING\"},{\"LscID\":\"NJ\",\"LscName\":\"NEW JERSEY SWIMMING\"},{\"LscID\":\"NM\",\"LscName\":\"NEW MEXICO SWIMMING\"},{\"LscID\":\"NI\",\"LscName\":\"NIAGARA SWIMMING\"},{\"LscID\":\"NC\",\"LscName\":\"NORTH CAROLINA SWIMMING\"},{\"LscID\":\"ND\",\"LscName\":\"NORTH DAKOTA SWIMMING\"},{\"LscID\":\"NT\",\"LscName\":\"NORTH TEXAS SWIMMING\"},{\"LscID\":\"OH\",\"LscName\":\"OHIO SWIMMING\"},{\"LscID\":\"OK\",\"LscName\":\"OKLAHOMA SWIMMING\"},{\"LscID\":\"OR\",\"LscName\":\"OREGON SWIMMING\"},{\"LscID\":\"OZ\",\"LscName\":\"OZARK SWIMMING\"},{\"LscID\":\"PN\",\"LscName\":\"PACIFIC NORTHWEST\"},{\"LscID\":\"PC\",\"LscName\":\"PACIFIC SWIMMING\"},{\"LscID\":\"PV\",\"LscName\":\"POTOMAC VALLEY SWIMMING\"},{\"LscID\":\"SI\",\"LscName\":\"SAN DIEGO-IMPERIAL\"},{\"LscID\":\"SN\",\"LscName\":\"SIERRA NEVADA SWIMMING\"},{\"LscID\":\"SR\",\"LscName\":\"SNAKE RIVER SWIMMING\"},{\"LscID\":\"SC\",\"LscName\":\"SOUTH CAROLINA SWIMMING\"},{\"LscID\":\"SD\",\"LscName\":\"SOUTH DAKOTA SWIMMING\"},{\"LscID\":\"ST\",\"LscName\":\"SOUTH TEXAS SWIMMING\"},{\"LscID\":\"SE\",\"LscName\":\"SOUTHEASTERN SWIMMING\"},{\"LscID\":\"CA\",\"LscName\":\"SOUTHERN CALIFORNIA\"},{\"LscID\":\"US\",\"LscName\":\"USA SWIMMING\"},{\"LscID\":\"UT\",\"LscName\":\"UTAH SWIMMING\"},{\"LscID\":\"VA\",\"LscName\":\"VIRGINIA SWIMMING\"},{\"LscID\":\"WT\",\"LscName\":\"WEST TEXAS SWIMMING\"},{\"LscID\":\"WV\",\"LscName\":\"WEST VIRGINIA SWIMMING\"},{\"LscID\":\"WI\",\"LscName\":\"WISCONSIN SWIMMING\"},{\"LscID\":\"WY\",\"LscName\":\"WYOMING SWIMMING\"}],\"Total\":61,\"AggregateResults\":null,\"Errors\":null}"
+          },
+          "redirectURL": "",
+          "headersSize": 425,
+          "bodySize": 3276
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0,
+          "dns": 0,
+          "connect": 0,
+          "ssl": 0,
+          "send": 0,
+          "wait": 100,
+          "receive": 1
+        },
+        "time": 101,
+        "_securityState": "secure",
+        "serverIPAddress": "184.31.166.100",
+        "connection": "443"
+      }
+    ]
+  }
+}

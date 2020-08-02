@@ -1,7 +1,7 @@
 package main
 
-import "github.com/pbar1/swim/cmd"
+import "github.com/pbar1/swim/pkg/cli"
 
 func main() {
-	cmd.Execute()
+	cli.Execute()
 }

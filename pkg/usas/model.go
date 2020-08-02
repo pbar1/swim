@@ -37,11 +37,13 @@ const (
 	Distance1500 Distance = 1500
 	Distance1650 Distance = 1650
 
-	StrokeFree   Stroke = 1
-	StrokeBack   Stroke = 2
-	StrokeBreast Stroke = 3
-	StrokeFly    Stroke = 4
-	StrokeIM     Stroke = 5
+	StrokeFree        Stroke = 1
+	StrokeBack        Stroke = 2
+	StrokeBreast      Stroke = 3
+	StrokeFly         Stroke = 4
+	StrokeIM          Stroke = 5
+	StrokeFreeRelay   Stroke = 6
+	StrokeMedleyRelay Stroke = 7
 
 	CourseSCY Course = 1
 	CourseSCM Course = 2
@@ -55,7 +57,7 @@ const (
 )
 
 var (
-	strokes = [...]string{"FR", "BK", "BR", "FL", "IM"}
+	strokes = [...]string{"FR", "BK", "BR", "FL", "IM", "FR-R", "MED-R"}
 	courses = [...]string{"SCY", "SCM", "LCM"}
 	zones   = [...]string{"All", "Central", "Eastern", "Southern", "Western"}
 )

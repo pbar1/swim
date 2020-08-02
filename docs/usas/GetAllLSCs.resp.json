@@ -1,0 +1,251 @@
+{
+  "Data": [
+    {
+      "LscID": "All",
+      "LscName": "All"
+    },
+    {
+      "LscID": "AD",
+      "LscName": "ADIRONDACK SWIMMING"
+    },
+    {
+      "LscID": "AK",
+      "LscName": "ALASKA SWIMMING"
+    },
+    {
+      "LscID": "AM",
+      "LscName": "ALLEGHENY MOUNTAIN"
+    },
+    {
+      "LscID": "AZ",
+      "LscName": "ARIZONA SWIMMING"
+    },
+    {
+      "LscID": "AR",
+      "LscName": "ARKANSAS SWIMMING"
+    },
+    {
+      "LscID": "BD",
+      "LscName": "BORDER SWIMMING"
+    },
+    {
+      "LscID": "CC",
+      "LscName": "CENTRAL CALIFORNIA"
+    },
+    {
+      "LscID": "CO",
+      "LscName": "COLORADO SWIMMING"
+    },
+    {
+      "LscID": "CT",
+      "LscName": "CONNECTICUT SWIMMING"
+    },
+    {
+      "LscID": "FG",
+      "LscName": "FLORIDA GOLD COAST"
+    },
+    {
+      "LscID": "FL",
+      "LscName": "FLORIDA SWIMMING"
+    },
+    {
+      "LscID": "GA",
+      "LscName": "GEORGIA SWIMMING"
+    },
+    {
+      "LscID": "GU",
+      "LscName": "GULF SWIMMING"
+    },
+    {
+      "LscID": "HI",
+      "LscName": "HAWAIIAN SWIMMING"
+    },
+    {
+      "LscID": "IL",
+      "LscName": "ILLINOIS SWIMMING"
+    },
+    {
+      "LscID": "IN",
+      "LscName": "INDIANA SWIMMING"
+    },
+    {
+      "LscID": "IE",
+      "LscName": "INLAND EMPIRE SWIMMING"
+    },
+    {
+      "LscID": "IA",
+      "LscName": "IOWA SWIMMING"
+    },
+    {
+      "LscID": "KY",
+      "LscName": "KENTUCKY SWIMMING"
+    },
+    {
+      "LscID": "LE",
+      "LscName": "LAKE ERIE SWIMMING"
+    },
+    {
+      "LscID": "LA",
+      "LscName": "LOUISIANA SWIMMING"
+    },
+    {
+      "LscID": "ME",
+      "LscName": "MAINE SWIMMING"
+    },
+    {
+      "LscID": "MD",
+      "LscName": "MARYLAND SWIMMING"
+    },
+    {
+      "LscID": "MR",
+      "LscName": "METROPOLITAN SWIMMING"
+    },
+    {
+      "LscID": "MI",
+      "LscName": "MICHIGAN SWIMMING"
+    },
+    {
+      "LscID": "MA",
+      "LscName": "MIDDLE ATLANTIC SWIMMING"
+    },
+    {
+      "LscID": "MW",
+      "LscName": "MIDWESTERN SWIMMING"
+    },
+    {
+      "LscID": "MN",
+      "LscName": "MINNESOTA SWIMMING"
+    },
+    {
+      "LscID": "MS",
+      "LscName": "MISSISSIPPI SWIMMING"
+    },
+    {
+      "LscID": "MV",
+      "LscName": "MISSOURI VALLEY SWIMMING"
+    },
+    {
+      "LscID": "MT",
+      "LscName": "MONTANA SWIMMING"
+    },
+    {
+      "LscID": "NE",
+      "LscName": "NEW ENGLAND SWIMMING"
+    },
+    {
+      "LscID": "NJ",
+      "LscName": "NEW JERSEY SWIMMING"
+    },
+    {
+      "LscID": "NM",
+      "LscName": "NEW MEXICO SWIMMING"
+    },
+    {
+      "LscID": "NI",
+      "LscName": "NIAGARA SWIMMING"
+    },
+    {
+      "LscID": "NC",
+      "LscName": "NORTH CAROLINA SWIMMING"
+    },
+    {
+      "LscID": "ND",
+      "LscName": "NORTH DAKOTA SWIMMING"
+    },
+    {
+      "LscID": "NT",
+      "LscName": "NORTH TEXAS SWIMMING"
+    },
+    {
+      "LscID": "OH",
+      "LscName": "OHIO SWIMMING"
+    },
+    {
+      "LscID": "OK",
+      "LscName": "OKLAHOMA SWIMMING"
+    },
+    {
+      "LscID": "OR",
+      "LscName": "OREGON SWIMMING"
+    },
+    {
+      "LscID": "OZ",
+      "LscName": "OZARK SWIMMING"
+    },
+    {
+      "LscID": "PN",
+      "LscName": "PACIFIC NORTHWEST"
+    },
+    {
+      "LscID": "PC",
+      "LscName": "PACIFIC SWIMMING"
+    },
+    {
+      "LscID": "PV",
+      "LscName": "POTOMAC VALLEY SWIMMING"
+    },
+    {
+      "LscID": "SI",
+      "LscName": "SAN DIEGO-IMPERIAL"
+    },
+    {
+      "LscID": "SN",
+      "LscName": "SIERRA NEVADA SWIMMING"
+    },
+    {
+      "LscID": "SR",
+      "LscName": "SNAKE RIVER SWIMMING"
+    },
+    {
+      "LscID": "SC",
+      "LscName": "SOUTH CAROLINA SWIMMING"
+    },
+    {
+      "LscID": "SD",
+      "LscName": "SOUTH DAKOTA SWIMMING"
+    },
+    {
+      "LscID": "ST",
+      "LscName": "SOUTH TEXAS SWIMMING"
+    },
+    {
+      "LscID": "SE",
+      "LscName": "SOUTHEASTERN SWIMMING"
+    },
+    {
+      "LscID": "CA",
+      "LscName": "SOUTHERN CALIFORNIA"
+    },
+    {
+      "LscID": "US",
+      "LscName": "USA SWIMMING"
+    },
+    {
+      "LscID": "UT",
+      "LscName": "UTAH SWIMMING"
+    },
+    {
+      "LscID": "VA",
+      "LscName": "VIRGINIA SWIMMING"
+    },
+    {
+      "LscID": "WT",
+      "LscName": "WEST TEXAS SWIMMING"
+    },
+    {
+      "LscID": "WV",
+      "LscName": "WEST VIRGINIA SWIMMING"
+    },
+    {
+      "LscID": "WI",
+      "LscName": "WISCONSIN SWIMMING"
+    },
+    {
+      "LscID": "WY",
+      "LscName": "WYOMING SWIMMING"
+    }
+  ],
+  "Total": 61,
+  "AggregateResults": null,
+  "Errors": null
+}
